@@ -1,7 +1,9 @@
 import logging
 
 
-logging.basicConfig(filename='app.log', level=logging.DEBUG)
+logging.basicConfig(filename='app.log', level=logging.DEBUG, 
+        format='%(asctime)s - %(levelname)s - %(message)s'            
+                    )
 
 
 
@@ -20,8 +22,8 @@ def divide (x, y):
         raise ValueError("Cannot divide by zero.")
     return x / y
 
-num_1 = 10
-num_2 = 5
+num_1 = 11
+num_2 = 8
 
 add_result = add(num_1, num_2)
 logging.debug(f"Addition Result: {add_result}")
