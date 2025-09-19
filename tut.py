@@ -1,9 +1,18 @@
 import logging
+import example
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+file_handler = logging.FileHandler("app.log")
+file_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
 
 
-logging.basicConfig(filename='app.log', level=logging.DEBUG, 
-        format='%(asctime)s - %(levelname)s - %(message)s'            
-                    )
+
 
 
 
@@ -26,13 +35,13 @@ num_1 = 11
 num_2 = 8
 
 add_result = add(num_1, num_2)
-logging.debug(f"Addition Result: {add_result}")
+logger.debug(f"Addition Result: {add_result}")
 
 subtract_result = subtract(num_1, num_2)
-logging.debug(f"Subtraction Result: {subtract_result}")
+logger.debug(f"Subtraction Result: {subtract_result}")
 
 multiply_result = multiply(num_1, num_2)
-logging.debug(f"Multiplication Result: {multiply_result}")
+logger.debug(f"Multiplication Result: {multiply_result}")
 
 divide_result = divide(num_1, num_2)
-logging.debug(f"Division Result: {divide_result}")
+logger.debug(f"Division Result: {divide_result}")

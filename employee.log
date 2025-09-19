@@ -1,2 +1,6 @@
 2025-09-19 10:19:48,533 - __main__ - INFO - Employee created: juma Doe - juma.doe@company.com
 2025-09-19 10:19:48,533 - __main__ - INFO - Employee created: jane Smith - jane.smith@company.com
+2025-09-19 10:26:05,071 - example - INFO - Employee created: juma Doe - juma.doe@company.com
+2025-09-19 10:26:05,072 - example - INFO - Employee created: jane Smith - jane.smith@company.com
+2025-09-19 10:27:11,192 - example - INFO - Employee created: juma Doe - juma.doe@company.com
+2025-09-19 10:27:11,195 - example - INFO - Employee created: jane Smith - jane.smith@company.com
